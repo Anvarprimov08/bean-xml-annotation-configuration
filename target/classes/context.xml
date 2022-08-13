@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="users" name="userBean" class="uz.spring.modelXmlBean.Users">
+        <property name="age" value="27"/>
+        <property name="name" value="Anvar"/>
+        <property name="address" value="Samarkand"/>
+    </bean>
+
+    <bean id="car" name="carBean"  class="uz.spring.modelXmlBean.Car">
+        <constructor-arg name="id" value="1" type="int"/>
+        <constructor-arg name="model" value="nexia"/>
+        <constructor-arg name="color" value="black"/>
+    </bean>
+</beans>
